@@ -24,4 +24,19 @@ function agregarTarea() {
     listaTareas.removeChild(listItem);
     actualizarTotalTareas();
   };
+  listItem.appendChild(eliminarBtn);
+
+  listaTareas.appendChild(listItem);
+
+  tareaInput.value = "";
+  actualizarTotalTareas();
+}
+function actualizarTotalTareas() {
+  let listaTareas = document.getElementById("listaTareas");
+
+  let tareas = Array.from(listaTareas.children).filter(
+    (elemento) => elemento.tagName === "LI"
+  );
+  totalTareas = tareas.length;
+  document.getElementById("totalTareas").innerText = totalTareas;
 }
