@@ -2,10 +2,33 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 }
 
 main {
   flex-grow: 1;
 }
 
+.container {
+  max-width: 600px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.badge {
+  background-color: #343a40;
+  margin-left: 10px;
+}
+
+h1,
+h2 {
+  color:rgb(51, 24, 226);;
+}
