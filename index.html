@@ -21,7 +21,20 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="container mt-5">
+            <h1 class="mb-4">Guía de Tareas</h1>
+            <div class="input-group mb-3">
+                <input type="text" id="tareaInput" class="form-control" placeholder="Ingrese una tarea" minlength="30" maxlength="100" required>
+                <div class="input-group-append">
+                    <button class="btn btn-primary mx-4" onclick="agregarTarea()">Agregar</button>
+                </div>
+            </div>
+            <ul id="listaTareas" class="list-group">
+                <p>Total de Tareas: <span id="totalTareas" class="badge badge-secondary">0</span></p>
+            </ul>
+        </section>
+    </main>
     <footer class="bg-primary text-light py-3 text-center">
         <p> &copy; Todos los derechos reservados</p>
     </footer>
